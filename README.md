@@ -72,3 +72,6 @@ Got some ideas? Fantastic! Just fork the repo, sprinkle in your magic, and then 
 ## Tests
 
 For a deep dive into the application's test suite, get to the root directory of the project and punch in `npm test`.
+
+## GitHub Repository
+For the source code and more details, check out the [SVG Logo Maker GitHub Repository](https://github.com/grayd500/SVG-Logo-Maker).
