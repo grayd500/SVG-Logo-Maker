@@ -36,11 +36,14 @@ Here's a snapshot of a sample SVG:
 ![Sample SVG Logo](assets/images/sample.jpg)
 \```
 
+### Demo Video
+Check out the [SVG Logo Maker Demo Video](https://share.vidyard.com/watch/ye8QyywbvixZSQwP2Toa7F?).
+
 ## Credits
 
 Special shoutout to:
 
-- **Ramon Sanchez** (Bootcamp Tutor) - His insights and starter code were indispensable.
+- **Ramon Sanchez** (Bootcamp Tutor) - His insights and assistance with starter code were indispensable.
   
 **Handy Resources**:
 - [SVG tutorial](https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial)
