@@ -1,76 +1,71 @@
-Object-oriented Programming Challenge: SVG Logo Maker
-Your task is to build a Node.js command-line application that takes in user input to generate a logo and save it as an SVG fileLinks to an external site.. The application prompts the user to select a color and shape, provide text for the logo, and save the generated SVG to a .svg file.
+# SVG Logo Maker
 
-Because this application won’t be deployed, you’ll need to provide a link to a walkthrough video that demonstrates its functionality and passes all of the tests. You’ll need to submit a link to the video and add it to the README of your project.
+## Description
 
-Refer to the Video Submission GuideLinks to an external site. on the Full-Stack Blog for additional guidance on creating a video.
+This command-line application is tailor-made for web developers, especially those who need a rapid and efficient method for generating logos for their projects without the necessity of graphic designers. With this tool, logos can be tailored in shape, color, and text and then saved as an SVG file.
 
-** User Story
-AS a freelance web developer
-I WANT to generate a simple logo for my projects
-SO THAT I don't have to pay a graphic designer
-Acceptance Criteria
-GIVEN a command-line application that accepts user input
-WHEN I am prompted for text
-  THEN I can enter up to three characters
-WHEN I am prompted for the text color
-  THEN I can enter a color keyword (OR a hexadecimal number)
-WHEN I am prompted for a shape
-  THEN I am presented with a list of shapes to choose from: circle, triangle, and square
-WHEN I am prompted for the shape's color
-  THEN I can enter a color keyword (OR a hexadecimal number)
-WHEN I have entered input for all the prompts
-  THEN an SVG file is created named `logo.svg`
-AND the output text "Generated logo.svg" is printed in the command line
-WHEN I open the `logo.svg` file in a browser
-  THEN I am shown a 300x200 pixel image that matches the criteria I entered
+- **Motivation**: The life of a freelance web developer often means juggling multiple roles. One of them might occasionally be playing the part of a graphic designer. This project was born out of the necessity to quickly craft simple yet impactful logos for diverse projects without the dependence on external tools or services.
   
-Mock-Up
-The following image shows a mock-up of the generated SVG given the following input entered by the user: SVG for the text, white for the text color, circle from the list of shapes, and green for the shape color. Note that this is just an image of the output SVG and not the SVG file itself (see assets):
+- **Why**: Autonomy and speed are the game changers. Why sit around waiting for a graphic designer or wrestle with intricate design software for a straightforward logo requirement? Additionally, a few savings never hurt anybody.
+  
+- **Problem Solved**: Offers a swift method to generate SVG logos based on direct user input from the command line.
 
-Getting Started
-This Challenge combines many of the skills covered so far. In addition to the User Story and Acceptance Criteria, we’ve provided some guidelines to help you get started.
+- **Learnings**: Diving deep into node.js, exploring SVG generation, crafting CLI tools, and refining user input to create an intuitive user experience.
 
-Because this Challenge requires a video submission, refer to the Full-Stack Blog video submission guideLinks to an external site. for guidance on creating and sharing a video.
+## Table of Contents 
 
-Your application should use JestLinks to an external site. for running the unit tests and InquirerLinks to an external site. for collecting input from the user. The application will be invoked by using the following command:
+- [Installation](#installation)
+- [Usage](#usage)
+- [Credits](#credits)
+- [License](#license)
 
-node index.js
-It is recommended that you start with a directory structure that looks like the following example:
+## Installation
 
-.  
-├── examples/           // Example svg file(s) created with the app
-├── lib/                // Folder for classes or functions
-    ├── shapes.js       // Exports `Triangle`, `Circle`, and `Square` classes
-    ├── shapes.test.js  // Jest tests for shapes
-    └── more...         // Additional files and tests
-├── .gitignore          // Indicates which folders and files Git should ignore
-├── index.js            // Runs the application using imports from lib/
-├── package.json
-└── README.md           // App description, link to video, setup and usage instructions           
-IMPORTANT
-Make sure that you remove dist from the .gitignore file so that Git will track this folder and include it when you push up to your application's repository.
+1. Clone the repository to your machine.
+2. Navigate to the directory.
+3. Execute `npm install` to fetch the necessary dependencies.
 
-The application must include Triangle, Circle, and Square classes, as well as tests for each of these classes using Jest. While not a requirement, it is recommended that you place any common functionality and properties shared by the Triangle, Circle, and Square classes in a parent Shape class and use inheritance to reuse the code in the child classes.
+## Usage
 
-Each shape class should be tested for a render() method that returns a string for the corresponding SVG file with the given shape color.
+1. Kickstart the application with the `node index.js` command.
+2. Adhere to the on-screen cues to customize your logo's shape, tint, and text.
+3. On successful wrap-up, the message "Generated logo.svg" will be displayed. Launch this file in any web browser to admire your freshly minted logo.
 
-The following example test should pass:
+Here's a snapshot of a sample SVG:
+\```md
+![Sample SVG Logo](assets/images/sample-logo.png)
+\```
 
-const shape = new Triangle();
-shape.setColor("blue");
-expect(shape.render()).toEqual('<polygon points="150, 18 244, 182 56, 182" fill="blue" />');
-You may need to add additional files in the lib folder for handling user input, writing to a file, etc. Writing tests for these additional files is optional.
+## Credits
 
-Helpful SVG Resources
-Example SVGLinks to an external site.
+Special shoutout to:
 
-Scalable Vector Graphics (SVG)Links to an external site. 
+- **Ramon Sanchez** (Bootcamp Tutor) - His insights and starter code were indispensable.
+  
+**Handy Resources**:
+- [SVG tutorial](https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial)
+- [Basic SVG shapes](https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/Basic_Shapes)
+- [Text in SVG](https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/Texts)
+- [SVG VS Code extension](https://marketplace.visualstudio.com/items?itemName=jock.svg)
 
-SVG tutorialLinks to an external site.https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial
+## License
 
-Basic SVG shapesLinks to an external site.https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/Basic_Shapes
+Under the MIT License.
 
-Text in SVGLinks to an external site.https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/Texts
+## Badges
 
-SVG VS Code extensionLinks to an external site.https://marketplace.visualstudio.com/items?itemName=jock.svg
+![Node Version](https://img.shields.io/node/v/npm)
+![License](https://img.shields.io/github/license/your-github-username/svg-logo-maker)
+
+## Features
+
+- Craft SVG logos right from the command line.
+- Full control over logo text, shades, and forms (triangle, circle, square).
+
+## How to Contribute
+
+Got some ideas? Fantastic! Just fork the repo, sprinkle in your magic, and then push a pull request. Every contribution is cherished!
+
+## Tests
+
+For a deep dive into the application's test suite, get to the root directory of the project and punch in `npm test`.
