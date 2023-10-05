@@ -33,7 +33,7 @@ This command-line application is tailor-made for web developers, especially thos
 
 Here's a snapshot of a sample SVG:
 \```md
-![Sample SVG Logo](assets/images/sample-logo.png)
+![Sample SVG Logo](assets/images/sample.jpg)
 \```
 
 ## Credits
